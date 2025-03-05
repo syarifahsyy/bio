@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #a8d8ea, #fbc2eb);
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .header {
+            background: rgba(251, 194, 235, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header .emoji {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 2rem;
+            animation: bounce 1.5s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .content {
+            padding: 20px;
+        }
+        .profile-picture {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(168, 216, 234, 0.8);
+        }
+        .details {
+            line-height: 1.8;
+        }
+        .details dt {
+            font-weight: bold;
+        }
+        .footer {
+            background: rgba(168, 216, 234, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            position: relative;
+        }
+        .footer a {
+            color: rgba(251, 194, 235, 0.9);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .emoji-footer {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            animation: spin 3s infinite linear;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Selamat datang di website Sya!</h1>
+            <h2> Ini adalah biodata diri saya</h2>
+            <div class="emoji">🐣</div>
+        </div>
+        <div class="content">
+            <div class="profile-picture">
+            <img src="https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/469480729_1259430355203968_7725126329813650260_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=i2qaLA0qSx0Q7kNvgHL8OGZ&_nc_oc=AdiO9OMawQbiQvHVL7QTr3pIP0FWGeZkDZwvchH5_AVg8jItqOti5__Id9y7IxLzK10&_nc_zt=23&_nc_ht=scontent-sin6-1.xx&_nc_gid=AwrsR4ZySkiSo_nO_VkCM7A&oh=00_AYD1HICMLRkPdiIjfBAYxvYpVdYj-SRZREplNT5n3TFnCw&oe=67CDC3D7" alt="Foto Profil">
+            </div>
+            <dl class="details">
+                <dt>Nama:</dt>
+                <dd>Syarifah Syamilah</dd>
+
+                <dt>NIM:</dt>
+                <dd>233140700111094</dd>
+
+                <dt>Alamat:</dt>
+                <dd>Jl. Yulius Usman V/198, Malang</dd>
+
+                <dt>Hobi:</dt>
+                <dd>Mendengarkan musik</dd>
+            </dl>
+        </div>
+        <div class="footer">
+            <p>Designed by <a href="#">Syarifah Syamilah</a></p>
+            <div class="emoji-footer">🎉</div>
+        </div>
+    </div>
+</body>
+</html>
